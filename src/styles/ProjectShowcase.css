@@ -1,0 +1,33 @@
+/* ProjectShowcase Styles */
+/* .project-showcase {
+  background: linear-gradient(135deg, rgba(10, 14, 39, 1) 0%, rgba(22, 33, 62, 0.5) 100%);
+} */
+
+/* Gradient text animation */
+@keyframes gradientShift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Smooth transitions for interactive elements */
+.project-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* SVG diagram styles */
+.architecture-diagram {
+  filter: drop-shadow(0 10px 25px rgba(0, 217, 255, 0.1));
+}
+
+/* Performance: GPU acceleration for animations */
+.project-showcase * {
+  will-change: auto;
+}
+
+.project-showcase:hover * {
+  will-change: transform;
+}
