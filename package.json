@@ -1,5 +1,6 @@
 {
   "name": "dev-portfolio",
+  "homepage": "https://charlesreign.github.io/portfolio",
   "version": "1.0.0",
   "description": "Senior Frontend Architect Portfolio",
   "type": "module",
@@ -8,11 +9,14 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "eslint src --ext .js,.jsx"
+    "lint": "eslint src --ext .js,.jsx",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.19",
     "framer-motion": "^10.16.4",
+    "gh-pages": "^6.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
