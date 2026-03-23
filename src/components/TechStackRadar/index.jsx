@@ -11,11 +11,11 @@ const TechStackRadar = () => {
       borderColor: 'border-accent',
       technologies: [
         { name: 'Python', proficiency: 95 },
-        { name: 'React', proficiency: 92 },
-        { name: 'FastAPI', proficiency: 90 },
-        { name: 'PostgreSQL', proficiency: 88 },
+        { name: 'Java', proficiency: 93 },
         { name: 'JavaScript', proficiency: 90 },
-        { name: 'System Design', proficiency: 93 }
+        { name: 'FastAPI', proficiency: 90 },
+        { name: 'Spring Boot', proficiency: 88 },
+        { name: 'Reactjs', proficiency: 92 }
       ]
     },
     proficient: {
@@ -28,8 +28,7 @@ const TechStackRadar = () => {
         { name: 'Kubernetes', proficiency: 80 },
         { name: 'Redis', proficiency: 82 },
         { name: 'AWS', proficiency: 78 },
-        { name: 'Node.js', proficiency: 85 },
-        { name: 'TypeScript', proficiency: 82 }
+        { name: 'Node.js', proficiency: 85 }
       ]
     },
     familiar: {
@@ -73,7 +72,7 @@ const TechStackRadar = () => {
           <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">
             Tech Stack <span className="text-accent">Radar</span>
           </h2>
-          <p className="text-gray-400 text-lg max-w-2xl">
+          <p className="text-gray-400 text-lg max-w-2xl font-mono">
             Technologies organized by proficiency level. Focus on depth over breadth.
           </p>
         </motion.div>
@@ -127,7 +126,7 @@ const TechStackRadar = () => {
                 <h4 className="text-accent font-bold mb-3">{comp.title}</h4>
                 <ul className="space-y-2">
                   {comp.items.map((item, i) => (
-                    <li key={i} className="text-gray-300 flex items-start gap-2">
+                    <li key={i} className="text-gray-300 flex items-start gap-2 font-mono">
                       <span className="text-accent mt-1">•</span>
                       {item}
                     </li>
