@@ -112,7 +112,7 @@ const HeroSection = () => {
                       animate={{ opacity: 1, y: 0 }}
                       className="text-gray-300 text-sm space-y-1"
                     >
-                      <p>Building scalable systems with React & Python</p>
+                      <p>Building scalable systems.</p>
                       <p>Full-Stack Architecture | System Design | Performance Optimization</p>
                     </motion.div>
                   )}
@@ -127,11 +127,11 @@ const HeroSection = () => {
               Charles Gold
             </h1>
             <p className="text-xl sm:text-2xl text-accent font-mono">
-              Senior Full-Stack Engineer
+              Software Engineer
             </p>
             <p className="text-lg text-white max-w-2xl font-mono mx-auto">
-              Architecting high-performance systems at scale. Expert in distributed systems,
-              performance optimization, and team leadership.
+              Software engineer dedicated to bridging the gap between complex technical 
+              challenges and seamless user experiences through clean code and strategic system design.
             </p>
           </motion.div>
 
