@@ -45,10 +45,11 @@ const About = () => {
             <h3 className="text-2xl font-bold text-white">Professional Summary</h3>
             <div className="space-y-4 text-white leading-relaxed">
               <p>
-                Senior Full-Stack Engineer with 8+ years of experience architecting and scaling distributed systems that process millions of events daily. Specialized in building high-performance, fault-tolerant systems that serve enterprise and consumer-facing applications.
-              </p>
-              <p>
-                Proven track record of leading technical teams, mentoring junior engineers, and delivering systems that directly impact business metrics. Core expertise spans full-stack development (React, Node.js, Python), cloud infrastructure (AWS, Kubernetes, Docker), and system design patterns that prioritize scalability, reliability, and developer experience.
+                Dynamic Software Engineer with over 5 years of experience architecting and deploying scalable, full-stack enterprise solutions.<br />
+                Proven expertise in designing high-performance backend architectures using Python (FastAPI) and Java (Spring Boot), alongside modern frontend frameworks. 
+                A strong advocate for DevOps best practices, with a track record of automating CI/CD pipelines and managing containerized deployments across Kubernetes and AWS. 
+                Dedicated to building secure, user-centric systems that drive measurable business impact and operational efficiency.
+                Passionate about writing clean code, fostering collaborative engineering cultures, and solving complex architectural challenges. Known for clear technical communication, both in code and documentation, enabling teams to ship with confidence.
               </p>
               <p>
                 Passionate about writing clean code, fostering collaborative engineering cultures, and solving complex architectural challenges. Known for clear technical communication, both in code and documentation, enabling teams to ship with confidence.
@@ -62,28 +63,28 @@ const About = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {[
                 {
-                  metric: '100K+ Events/sec',
-                  description: 'Built event processing system handling real-time IoT data'
+                  metric: '40% Workflow Improvement',
+                  description: 'Architected and deployed a scalable Python-based microservices solution using FastAPI, which improved security scanning workflows by 40%'
                 },
                 {
-                  metric: '75% Performance Gain',
-                  description: 'Optimized React dashboard from 8s to 450ms load time'
+                  metric: '1M+ Trades/Min',
+                  description: 'Engineered a high-frequency stock trading engine supporting 1M+ simulated trades per minute with sub-millisecond latency using Python, Java, and WebSockets.'
                 },
                 {
-                  metric: '50+ Enterprise Clients',
-                  description: 'Architected multi-tenant SaaS platform with 99.95% uptime'
+                  metric: '30% UI Load Time Reduction',
+                  description: 'Reduced UI load times by 30% by designing responsive React.js and Vue.js components and optimizing state management.'
                 },
                 {
-                  metric: '500+ Concurrent Users',
-                  description: 'Built real-time collaboration engine with <200ms sync latency'
+                  metric: '50% Faster Deployments',
+                  description: 'Automated deployment pipelines by migrating to Jenkins Pipeline as Code (JPAC), significantly accelerating release cycles across Kubernetes clusters.'
                 },
                 {
-                  metric: '40% Cost Reduction',
-                  description: 'Optimized infrastructure reducing cloud spend significantly'
+                  metric: '99.9% Uptime',
+                  description: 'Maintained 99.9% uptime for critical security tools by configuring load balancers, DNS routing, and real-time Splunk monitoring dashboards.'
                 },
                 {
-                  metric: '12+ Direct Reports',
-                  description: 'Led and mentored teams across multiple departments'
+                  metric: 'Mentored Engineers',
+                  description: 'Led technical mentorship and quality standards by conducting rigorous code reviews, authoring Architectural Decision Records (ADRs), and onboarding junior engineers.'
                 }
               ].map((item, idx) => (
                 <motion.div
