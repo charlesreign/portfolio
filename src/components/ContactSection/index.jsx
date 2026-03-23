@@ -70,34 +70,37 @@ const ContactSection = () => {
 
           {/* Contact Info */}
           <motion.div
-            variants={itemVariants}
-            className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12"
+          variants={itemVariants}
+          className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12"
           >
-            {[
-              {
-                label: 'Email',
-                value: 'charles@example.com',
-                icon: '📧'
-              },
-              {
-                label: 'GitHub',
-                value: 'github.com/charles',
-                icon: '🐙'
-              },
-              {
-                label: 'LinkedIn',
-                value: 'linkedin.com/in/charles',
-                icon: '💼'
-              }
-            ].map((contact, idx) => (
-              <div key={idx} className="bg-dark rounded-lg border border-dark-tertiary p-6 text-center hover:border-accent transition-colors">
-                <span className="text-3xl mb-3 block">{contact.icon}</span>
-                <p className="text-gray-400 text-sm mb-2">{contact.label}</p>
-                <p className="text-white font-mono text-sm hover:text-accent transition-colors cursor-pointer">
-                  {contact.value}
-                </p>
-              </div>
-            ))}
+          {[
+            {
+            label: 'Email',
+            value: 'charlesgold45@gmail.com',
+            icon: '📧',
+            href: 'mailto:charlesgold45@gmail.com'
+            },
+            {
+            label: 'GitHub',
+            value: 'github.com/charlesreign',
+            icon: '🐙',
+            href: 'https://github.com/charlesreign'
+            },
+            {
+            label: 'LinkedIn',
+            value: 'linkedin.com/in/charles',
+            icon: '💼',
+            href: 'https://www.linkedin.com/in/charles-gold-066aa811a/'
+            }
+          ].map((contact, idx) => (
+            <a key={idx} href={contact.href} target="_blank" rel="noopener noreferrer" className="bg-dark rounded-lg border border-dark-tertiary p-6 text-center hover:border-accent transition-colors">
+            <span className="text-3xl mb-3 block">{contact.icon}</span>
+            <p className="text-gray-400 text-sm mb-2">{contact.label}</p>
+            <p className="text-white font-mono text-sm hover:text-accent transition-colors">
+              {contact.value}
+            </p>
+            </a>
+          ))}
           </motion.div>
 
           {/* Contact Form */}
