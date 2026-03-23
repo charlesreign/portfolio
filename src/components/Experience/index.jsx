@@ -4,39 +4,40 @@ import { motion } from 'framer-motion'
 const Experience = () => {
   const experiences = [
     {
-      title: 'Senior Software Engineer',
-      company: 'TechCorp Inc.',
-      period: '2021 - Present',
-      location: 'San Francisco, CA',
-      highlights: [
-        'Led architecture and implementation of event-driven microservices handling 100K+ events/sec',
-        'Reduced database query latency from 5s to 200ms through strategic indexing and caching',
-        'Mentored team of 8 engineers on system design, code quality, and best practices',
-        'Designed and shipped multi-tenant SaaS platform serving 50+ enterprise customers with 99.95% uptime'
-      ]
-    },
-    {
-      title: 'Full-Stack Engineer',
-      company: 'StartupXYZ',
-      period: '2018 - 2021',
-      location: 'Remote',
-      highlights: [
-        'Built React dashboard for real-time analytics, improving initial load time by 75%',
-        'Architected Node.js/PostgreSQL backend supporting 500+ concurrent users',
-        'Implemented real-time collaboration engine with WebSocket and Operational Transformation',
-        'Grew engineering team from 2 to 6 people while maintaining code quality and team velocity'
-      ]
-    },
-    {
       title: 'Software Engineer',
-      company: 'DataSystems Ltd.',
-      period: '2016 - 2018',
-      location: 'New York, NY',
+      company: 'Morgan Stanley',
+      period: '2022 - Present',
+      location: 'Ghana, Accra',
       highlights: [
-        'Developed ETL pipelines processing millions of records daily using Python and PostgreSQL',
-        'Optimized REST API response times by implementing caching and query optimization',
-        'Contributed to infrastructure migration from monolith to microservices',
-        'Wrote comprehensive documentation and technical guides for team onboarding'
+        'Led end-to-end Python implementation of Enterprise Security Platforms, Executor Service using FastAPI, achieving 40% faster security scanning workflows.',
+        'Built RESTful backend services with Spring Boot and FastAPI, implementing Kerberos and OIDC authentication for enterprise security.',
+        'Spearheaded CI/CD pipeline migrations from StashCI to Jenkins Pipeline as Code (JPAC), automating deployments across Kubernetes clusters and cutting release cycles time.',
+        'Configured infrastructure with load balancers, DNS routing, and Splunk monitoring for 99.9% uptime on critical security tools.',
+        'Led cross-functional DART teams to deliver zero-defect production features using design patterns and comprehensive testing.',
+        'Conducted code reviews and authored Architectural Decision Records (ADRs) to prevent bugs and foster best practices.'
+      ]
+    },
+    {
+      title: 'Software Engineer II',
+      company: 'Turntabl',
+      period: '2021 - present',
+      location: 'Ghana, Accra',
+      highlights: [
+        'Built a high-frequency stock trading engine in Python/Java with FastAPI and WebSockets, processing 1M+ trades/minute at sub-millisecond latency.',
+        'Architected high-availability trading backend with API gateways and Redis-based rate limiting for peak market load handling.',
+        'Mentored 5 junior interns and new hires through pair programming and code walkthroughs, accelerating their onboarding by 40% and contributing to team velocity in Agile sprints.',
+      ]
+    },
+    {
+      title: 'Software Engineering Tutor',
+      company: 'UPI',
+      period: '2018 - 2021',
+      location: 'Ghana, Kumasi',
+      highlights: [
+        'Designed and delivered curricula for 100+ students across Android, Java/Python, and full-stack web development with 85% project completion and job placement for top performers.',
+        'Led hands-on workshops on secure coding practices and DevOps fundamentals, integrating tools like Git and Docker to prepare students for industry roles.',
+        'Supervised capstone projects, providing feedback on architecture, testing, and deployment, with 75+ student apps deployed to production environments.',
+        'Interviewed and onboarded 20+ tech candidates through technical assessments and skills evaluation.'
       ]
     }
   ]
@@ -75,8 +76,8 @@ const Experience = () => {
           <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">
             Professional <span className="text-accent">Experience</span>
           </h2>
-          <p className="text-gray-400 text-lg max-w-2xl">
-            A journey of building systems, leading teams, and solving complex engineering challenges.
+          <p className="text-gray-400 font-mono text-lg max-w-2xl">
+            A journey of building systems, and solving complex engineering challenges.
           </p>
         </motion.div>
 
@@ -148,9 +149,9 @@ const Experience = () => {
           className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6"
         >
           {[
-            { label: 'Years Experience', value: '8+' },
-            { label: 'Engineers Mentored', value: '20+' },
-            { label: 'Systems at Scale', value: '10+' }
+            { label: 'Years Experience', value: '5+' },
+            { label: 'Engineers Mentored', value: '10+' },
+            { label: 'Systems at Scale', value: '3+' }
           ].map((stat, idx) => (
             <div key={idx} className="bg-dark rounded-lg border border-dark-tertiary p-6 text-center">
               <div className="text-3xl font-bold text-accent mb-2">{stat.value}</div>
