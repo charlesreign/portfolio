@@ -8,3 +8,5 @@ build
 .cache
 
 prompty
+server-example.js
+.env.example

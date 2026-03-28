@@ -6,6 +6,7 @@ import Experience from './components/Experience'
 import ProjectShowcase from './components/ProjectShowcase'
 import TechStackRadar from './components/TechStackRadar'
 import ArchitectureDeepDive from './components/ArchitectureDeepDive'
+import BookingSection from './components/BookingSection'
 import ContactSection from './components/ContactSection'
 import './styles/index.css'
 
@@ -43,6 +44,11 @@ function App() {
         {/* Architecture Deep Dive */}
         <section id="architecture">
           <ArchitectureDeepDive />
+        </section>
+
+        {/* Booking Section */}
+        <section id="booking">
+          <BookingSection />
         </section>
 
         {/* Contact Section */}

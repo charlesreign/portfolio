@@ -1,0 +1,108 @@
+/* Booking Section Styles */
+
+.booking {
+  position: relative;
+}
+
+.booking input,
+.booking select,
+.booking textarea {
+  transition: all 0.3s ease;
+}
+
+.booking input:focus,
+.booking select:focus,
+.booking textarea:focus {
+  box-shadow: 0 0 0 3px rgba(138, 43, 226, 0.1);
+}
+
+/* Calendar grid animations */
+.booking-calendar-day {
+  transition: all 0.2s ease;
+}
+
+.booking-calendar-day:hover:not(:disabled) {
+  transform: scale(1.05);
+}
+
+.booking-calendar-day:disabled {
+  opacity: 0.5;
+}
+
+/* Time slot grid */
+.booking-time-slots {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  gap: 0.5rem;
+}
+
+.booking-time-slot {
+  transition: all 0.2s ease;
+}
+
+.booking-time-slot:hover:not(:disabled) {
+  transform: translateY(-2px);
+}
+
+/* Form validation states */
+.booking-form input:valid,
+.booking-form select:valid {
+  border-color: rgba(138, 43, 226, 0.5);
+}
+
+.booking-form input:invalid:not(:placeholder-shown),
+.booking-form select:invalid:not(:placeholder-shown) {
+  border-color: #ef4444;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .booking-time-slots {
+    grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+  }
+}
+
+/* Tab transitions */
+.booking-tab {
+  position: relative;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.booking-tab::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #8a2be2;
+  transition: width 0.3s ease;
+}
+
+.booking-tab.active::after {
+  width: 100%;
+}
+
+/* Embedding iframe */
+.booking-embed {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Confirmation message animation */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.booking-confirmation {
+  animation: slideIn 0.3s ease-out;
+}
