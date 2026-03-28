@@ -67,10 +67,11 @@ const BookingSection = () => {
               className="flex justify-center w-full"
             >
               <div className="rounded-lg border border-dark-tertiary overflow-hidden" style={{ 
-                minHeight: '50vh',
+                minHeight: '54vh',
                 backgroundColor: '#0a0a0a',
                 width: '100%',
-                maxWidth: '900px'
+                maxWidth: '900px',
+                paddingTop: '10px',
               }}>
                 <iframe
                   key={import.meta.env.VITE_CAL_EMBED_URL}
