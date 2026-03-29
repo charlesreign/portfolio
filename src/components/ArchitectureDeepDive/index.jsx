@@ -9,41 +9,6 @@ const ArchitectureDeepDive = () => {
   const engineeringLogs = [
     {
       id: 1,
-      title: 'Scaling Database Queries from 5s to 200ms',
-      date: 'December 2024',
-      category: 'Performance',
-      excerpt: 'How proper indexing, query optimization, and strategic caching reduced database load by 96%.',
-      content: `
-## Challenge
-Production queries on our user analytics table were consistently hitting the 5-second timeout threshold. This was impacting real-time dashboard performance and user experience.
-
-## Root Cause Analysis
-- Missing composite indexes on frequently queried columns (user_id, created_at)
-- N+1 query problem in ORM layer
-- No query result caching for repeated aggregations
-- Table size: 500M+ rows
-
-## Solution Stack
-- PostgreSQL EXPLAIN ANALYZE for profiling
-- Strategic index creation (B-tree for equality, BRIN for range queries)
-- Redis caching layer for aggregated metrics
-- Query batch optimization using window functions
-
-## Results
-- **Response time**: 5000ms → 200ms (96% improvement)
-- **DB load**: 89% CPU → 34% CPU
-- **Cache hit ratio**: 87% for aggregations
-- **User dashboard load time**: 8s → 1.2s
-
-## Key Learnings
-1. Always profile before optimizing
-2. Indexes are free on reads, expensive on writes
-3. Aggregate at query time when possible, cache the result
-4. Batch operations to reduce round trips
-      `
-    },
-    {
-      id: 2,
       title: 'Designing a Resilient Microservices Communication Layer',
       date: 'November 2024',
       category: 'Architecture',
@@ -91,7 +56,7 @@ Built a custom HTTP client with:
       `
     },
     {
-      id: 3,
+      id: 2,
       title: 'Building a Feature Flag System for Safe Deployments',
       date: 'October 2024',
       category: 'Infrastructure',
@@ -170,8 +135,7 @@ Remote Config → User Segments → Feature Flags
         >
           {[
             { id: 'overview', label: 'Engineering Logs', icon: '📝' },
-            { id: 'patterns', label: 'Architectural Patterns', icon: '⚙️' },
-            { id: 'systems', label: 'System Diagrams', icon: '📊' }
+            { id: 'patterns', label: 'Architectural Patterns', icon: '⚙️' }
           ].map(tab => (
             <button
               key={tab.id}
@@ -213,17 +177,6 @@ Remote Config → User Segments → Feature Flags
               className="space-y-8"
             >
               <ArchitecturalPatterns />
-            </motion.div>
-          )}
-
-          {/* System Diagrams */}
-          {activeTab === 'systems' && (
-            <motion.div
-              variants={tabVariants}
-              initial="hidden"
-              animate="visible"
-            >
-              <SystemDiagram />
             </motion.div>
           )}
         </div>
