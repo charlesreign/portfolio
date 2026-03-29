@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 
 const HeroSection = () => {
   const [displayText, setDisplayText] = useState('')
-  const fullText = '$ senior_engineer.solutions.build()'
+  const fullText = '$ software_engineer.solutions.build()'
 
   useEffect(() => {
     let index = 0
