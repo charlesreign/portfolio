@@ -11,22 +11,22 @@ const ProjectShowcase = () => {
       id: 1,
       title: 'High-Throughput Event Processing System',
       category: 'Backend',
-      context: 'Enterprise needed to process 100k+ events/sec from IoT sensors with sub-100ms latency requirements.',
+      context: 'Enterprise needed to scan each repo for security vulnerabilities before deployment.',
       architecture: {
-        components: ['FastAPI', 'Redis', 'PostgreSQL', 'Kafka', 'Docker', 'Kubernetes'],
-        diagram: 'iot-sensors → kafka-cluster → event-processor → redis-cache → postgres'
+        components: ['FastAPI', 'PostgreSQL', 'Kafka', 'Docker', 'Kubernetes'],
+        diagram: 'request → kafka-cluster → event-processor → postgres'
       },
       outcome: {
         metrics: [
-          '100,000+ events/sec throughput',
+          '1,000+ events/sec throughput',
           '45ms avg latency (requirement: <100ms)',
           '99.99% uptime over 12 months',
-          '40% cost reduction vs legacy system'
+          '40% faster security scanning workflows'
         ]
       },
-      tech: ['Python', 'FastAPI', 'Kafka', 'Redis', 'PostgreSQL', 'Docker', 'Kubernetes'],
+      tech: ['Python', 'FastAPI', 'Kafka', 'PostgreSQL', 'Docker', 'Kubernetes'],
       link: '#',
-      year: 2024
+      year: 2022
     },
     {
       id: 2,
@@ -49,34 +49,14 @@ const ProjectShowcase = () => {
       link: '#',
       year: 2024
     },
+    
     {
       id: 3,
-      title: 'Multi-Tenant Architecture Migration',
-      category: 'System Design',
-      context: 'Migrated monolithic application to multi-tenant SaaS platform serving 50+ enterprise customers.',
-      architecture: {
-        components: ['Node.js', 'PostgreSQL', 'Row-Level Security', 'Docker', 'AWS RDS'],
-        diagram: 'api-gateway → tenant-router → isolated-databases → monitoring'
-      },
-      outcome: {
-        metrics: [
-          '50+ enterprise tenants onboarded',
-          '99.95% uptime SLA maintained',
-          'Database isolation with RLS',
-          '200ms max query latency per tenant'
-        ]
-      },
-      tech: ['Node.js', 'Express', 'PostgreSQL', 'Docker', 'AWS'],
-      link: '#',
-      year: 2023
-    },
-    {
-      id: 4,
       title: 'Real-time Collaboration Engine',
       category: 'Full-Stack',
       context: 'Built real-time collaborative editing platform supporting 500+ concurrent users per document.',
       architecture: {
-        components: ['WebSocket', 'Operational Transformation', 'Redis', 'React', 'Node.js'],
+        components: ['WebSocket', 'Operational Transformation', 'Redis', 'React', 'python'],
         diagram: 'client → websocket-server → redis-sync → operational-transform → all-clients'
       },
       outcome: {

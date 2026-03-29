@@ -102,16 +102,6 @@ const ProjectCard = ({ project, index }) => {
             </span>
           ))}
         </div>
-
-        {/* CTA */}
-        <motion.a
-          href={project.link}
-          whileHover={{ x: 8 }}
-          className="inline-flex items-center gap-2 text-accent text-sm font-medium hover:gap-3 transition-all"
-        >
-          View Case Study
-          <span>→</span>
-        </motion.a>
       </div>
     </motion.div>
   )
